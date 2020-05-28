@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../src/ScratchTicket.js"></script>
+</head>
+<body>
+    <div class="docker"></div>
+    <script>
+        new ScratchTicket({
+            mountTarget:'.docker',
+            layerText:'first prize',
+            handleScratched(e) {
+                window.alert('Congraulation!you got the ' + e.result + '!')
+            }
+        })
+    </script>
+</body>
+</html>
